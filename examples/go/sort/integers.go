@@ -1,4 +1,4 @@
-package sort
+package main
 
 import (
 	"math/rand"
@@ -39,3 +39,5 @@ func createUnsortedSlice(min, max, len int) Integers {
 	}
 	return Integers(ints)
 }
+
+
