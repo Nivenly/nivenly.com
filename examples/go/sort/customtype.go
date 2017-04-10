@@ -27,7 +27,7 @@ func (s Types) Swap(i, j int) {
 func (s Types) Less(i, j int) bool {
 	iRune, _ := utf8.DecodeRuneInString(s[i].Value)
 	jRune, _ := utf8.DecodeRuneInString(s[j].Value)
-	return int32(iRune) < int32(jRune)
+	return int32(iRune) > int32(jRune)
 }
 
 func getUnsortedTypes() Types {
